@@ -47,7 +47,7 @@ const SearchPendencias = () => {
         <div className="searchPendencias">
             <div className="row-filters">
                 <div className="row fix-row">
-                    <div className="col-md-5">
+                    <div className="col-md-4">
                     <select className="form-control" onChange={(e) => setSearchData({
                             ...searchData,
                             pendencias: [],
@@ -65,8 +65,9 @@ const SearchPendencias = () => {
                     </select>
                     </div>
 
-                    <div className="col-md-2">
-                        <button className="btn btn-success btn-pendencias" onClick={()=> getPendencias(areaSelect)}>Buscar</button> 
+                    <div className="col-md-3 col-buttons">
+                        <button className="btn btn-success btn-search" onClick={()=> getPendencias(areaSelect)}>Buscar</button> 
+                        <Link to="add/" className="btn btn-warning btn-add">Adicionar</Link>
                     </div>
                 </div>
             </div>
@@ -78,7 +79,7 @@ const SearchPendencias = () => {
                             <tr>
                             <th>Número</th>
                             <th>Reponsável</th>
-                            <th></th>
+                            <th style={{width: "70px"}}></th>
                             </tr>
                         </thead>
                     

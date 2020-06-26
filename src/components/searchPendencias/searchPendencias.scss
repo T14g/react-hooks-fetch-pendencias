@@ -1,5 +1,5 @@
 .searchPendencias{
-    max-width: 700px;
+    max-width: 800px;
     margin: 20px auto;
 
     .row-filters{
@@ -10,13 +10,23 @@
         }
 
     }
-
-    .btn-success{
-        width: 100%;
-    }
-    
     .fix-row{
         margin: 0;
+    }
+
+    .col-buttons{
+        button, a{
+            width: 100%;
+
+            &.btn-search{
+                max-width: 68px;
+                margin-right: 10px;
+            }
+ 
+            &.btn-add{
+                max-width: 92px;
+            }
+        }
     }
 
     .table-pendencias{
